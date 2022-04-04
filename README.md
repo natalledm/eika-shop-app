@@ -8,7 +8,6 @@ It is a **mobile first page**, so please check it out first with your mobile or 
 
 You can visit the page [here](https://google.com/) to see the working app.
 
----
 
 ## Project Steps
 
@@ -32,7 +31,6 @@ This is [the user flow](https://whimsical.com/instapaket-packet-tracker-Ujgpt4hk
 
 Here is the [figma design](https://www.figma.com/file/SdyzR6VdEhB1syoAq77ICP/Eika-redo?node-id=601%3A131).
 
----
 
 ## Tech Stack and Assets
 
@@ -49,7 +47,6 @@ Here is the [figma design](https://www.figma.com/file/SdyzR6VdEhB1syoAq77ICP/Eik
 1. Fonts from Google Fonts
 2. Images from Ouch! Ilustrations
 
----
 
 ## Run the project
 
