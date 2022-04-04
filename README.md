@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Eika shopping list, now with tests ;)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here we are!
 
-## Available Scripts
+This is the Eika's shopping list, an app that helps you save the items you want to purchase during the (~~infinite~~) walk inside Eika.
 
-In the project directory, you can run:
+It is a **mobile first page**, so please check it out first with your mobile or a mobile screen option in your browser.
 
-### `npm start`
+You can visit the page [here](https://google.com/) to see the working app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Steps
 
-### `npm test`
+### Requirement gathering
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Information gathering from the [Assignment](https://drive.google.com/file/d/1eYBwMunKgEzlCfMPisl1UBDs5Jk8kWRe/view?usp=sharing).
 
-### `npm run build`
+### Project spreadsheet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A [spreadsheet](https://docs.google.com/spreadsheets/d/1Tv180Nuj5aKIY8Ilpr9svWoqa9fdPJKeGaAPE6BoI9E/edit?usp=sharing) to organize the structure of the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Component tree
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is [the component tree](https://whimsical.com/eika-redo-components-2GA3VMfX6P3s7h11Gmz6Tc@2Ux7TurymMzwnZRoMfMG) of this project made on Whimsical.
 
-### `npm run eject`
+### User Flow
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This is [the user flow](https://whimsical.com/instapaket-packet-tracker-Ujgpt4hkSxVL6LShLSdLwp@2Ux7TurymMpdwV9dTytZ) of this project made on Whimsical.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Figma design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Here is the [figma design](https://www.figma.com/file/SdyzR6VdEhB1syoAq77ICP/Eika-redo?node-id=601%3A131).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Tech Stack and Assets
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Tech
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. React
+2. CSS
+3. JSON
+4. Firebase
+5. Tests
 
-### Code Splitting
+### Assets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fonts from Google Fonts
+2. Images from Ouch! Ilustrations
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Run the project
 
-### Making a Progressive Web App
+In development mode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clone or download the repository in your computer.
 
-### Advanced Configuration
+2. Type `npm install` to install the project dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. start the application with `npm start`, it will open a `localhost:3000` page automatically in your default browser.
