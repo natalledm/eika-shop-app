@@ -2,7 +2,7 @@ import image from "../../assets/images/woman-shopping.png";
 import logo from "../../assets/logo/logo-desktop.png";
 import "../../styles/screens/intro-screen.css";
 
-export default function IntroScreen() {
+export default function IntroScreen({ setIsModalOpen }) {
   return (
     <div className="intro-screen-container flex-column-center">
       <div>
@@ -28,7 +28,12 @@ export default function IntroScreen() {
           you the name and the price of the item you want to purchase. You can
           also add an image after the item is added by touching the image icon.
         </p>
-        <button className="intro-link-button">Add item</button>
+        <button
+          className="intro-link-button"
+          onClick={() => setIsModalOpen(true)}
+        >
+          Add item
+        </button>
       </section>
     </div>
   );

@@ -1,0 +1,22 @@
+.modal-container {
+  z-index: 1;
+}
+
+.background-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a9a9a8;
+  opacity: 0.8;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--soft-blue);
+  box-shadow: 10px 10px 4px 3px #00000040;
+}
