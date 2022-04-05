@@ -1,9 +1,9 @@
-import { createPortal } from "react-dom";
 import "../../styles/components/modal.css";
+import { createPortal } from "react-dom";
 
-export default function Modal({ isModalOpen, setIsModalOpen }) {
-  console.log("tá aberto?", isModalOpen);
+import CreateItemForm from "./CreateItemForm";
 
+export default function Modal({ isModalOpen, setIsModalOpen, createItem }) {
   if (isModalOpen === false) return;
 
   return createPortal(
@@ -12,7 +12,12 @@ export default function Modal({ isModalOpen, setIsModalOpen }) {
         className="background-fade"
         onClick={() => setIsModalOpen(false)}
       ></div>
-      <div className="modal-content">Modal Here</div>
+      <div className="modal-content">
+        <CreateItemForm
+          setIsModalOpen={setIsModalOpen}
+          createItem={createItem}
+        />
+      </div>
     </div>,
     document.getElementById("modal"),
   );
