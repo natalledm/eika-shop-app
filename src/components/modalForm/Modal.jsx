@@ -6,8 +6,6 @@ import CreateItemForm from "./CreateItemForm";
 export default function Modal({ isModalOpen, toggleModal, createItem }) {
   if (isModalOpen === false) return;
 
-  console.log(JSON.stringify(CreateItemForm));
-
   const modal = createPortal(
     <div role="dialog" className="modal-container">
       <div className="background-fade" onClick={toggleModal}></div>

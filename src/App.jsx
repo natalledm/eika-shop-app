@@ -19,6 +19,19 @@ export default function App() {
     setList([...list, newItem]);
   }
 
+  const onItemCheck = (itemId) => {
+    const newList = list.map((item) => {
+      if (item.id === itemId) {
+        const newItem = { ...item, isCompleted: true };
+        return newItem;
+      } else {
+        return item;
+      }
+    });
+
+    setList(newList);
+  };
+
   // Save local storage
   useEffect(
     () => localStorage.setItem(storageKey, JSON.stringify(list)),
@@ -35,9 +48,13 @@ export default function App() {
 
   return (
     <div className="App">
-      {list.length === 0 && <IntroScreen setIsModalOpen={setIsModalOpen} />}
+      {list.length === 0 && <IntroScreen toggleModal={toggleModal} />}
       {list.length !== 0 && (
-        <ShoppingScreen list={list} setIsModalOpen={setIsModalOpen} />
+        <ShoppingScreen
+          list={list}
+          toggleModal={toggleModal}
+          onItemCheck={onItemCheck}
+        />
       )}
       <Modal
         isModalOpen={isModalOpen}
