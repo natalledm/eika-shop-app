@@ -7,11 +7,6 @@
   padding: 2rem;
 }
 
-.intro-logo {
-  width: 100px;
-  height: 40px;
-}
-
 .intro-image {
   width: 270px;
   height: 200px;
@@ -27,29 +22,9 @@
   text-align: left;
 }
 
-.intro-link-button {
-  width: 200px;
-  line-height: 44px;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  background-color: var(--blue);
-  color: var(--soft-blue);
-}
-
-.intro-link-button:hover {
-  background-color: var(--dark-blue);
-  cursor: pointer;
-}
-
 @media (min-width: 600px) {
   .intro-screen-container {
     margin: 5rem auto;
-  }
-
-  .intro-logo {
-    width: 360px;
-    height: 144px;
   }
 
   .intro-image {
@@ -63,7 +38,7 @@
     text-align: center;
   }
 
-  .intro-link-button {
+  .main-button {
     margin-top: 5rem;
   }
 }

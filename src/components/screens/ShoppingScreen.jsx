@@ -1,5 +1,8 @@
-import logo from "../../assets/logo/logo-desktop.png";
 import ShoppingList from "../lists/ShoppingList";
+import logo from "../../assets/logo/logo-desktop.png";
+import "../../styles/screens/shopping-screen.css";
+import eyeClosed from "../../assets/icons/icon-eye-close.png";
+import eyeOpen from "../../assets/icons/icon-eye-open.png";
 
 export default function ShoppingScreen({ list, setIsModalOpen }) {
   console.log(list);
@@ -10,15 +13,21 @@ export default function ShoppingScreen({ list, setIsModalOpen }) {
   }
 
   return (
-    <div>
-      <header>
-        <img src={logo} alt="Eika's logo" />
-        <h1>Shopping List</h1>
+    <div className="shopping-screen-container flex-column-center">
+      <header className="shop-header">
+        <img src={logo} alt="Eika's logo" className="logo" />
+        <h1 className="shop-title">Shopping List</h1>
       </header>
-      <div>
+      <div className="incomplete-list-container">
         <ShoppingList list={filterIncompleteItems(list)} />
       </div>
-      <button onClick={() => setIsModalOpen(true)}>Add Item</button>
+      <button className="main-button" onClick={() => setIsModalOpen(true)}>
+        Add Item
+      </button>
+      <button className="completed-item-button">
+        <img src={eyeClosed} alt="" className="complete-button-icon" />
+        View Completed Items
+      </button>
     </div>
   );
 }

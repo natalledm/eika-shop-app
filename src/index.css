@@ -21,12 +21,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-color: var(--soft-blue);
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  background-color: var(--soft-blue);
   box-sizing: border-box;
   min-height: 100%;
   margin: 0;

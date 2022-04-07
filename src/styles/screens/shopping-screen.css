@@ -1,0 +1,33 @@
+.shopping-screen-container {
+  max-width: 1080px;
+  height: fit-content;
+  align-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.shop-header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.shop-title {
+  padding-top: 2rem;
+}
+
+.incomplete-list-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.completed-item-button {
+  border: none;
+  background-color: var(--soft-blue);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+  margin-top: 3rem;
+  height: 50px;
+}

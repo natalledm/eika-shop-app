@@ -21,7 +21,7 @@ export default function App() {
 
   // Save local storage
   useEffect(
-    () => localStorage.setItem(storageKey, JSON.stringify([list])),
+    () => localStorage.setItem(storageKey, JSON.stringify(list)),
     [list],
   );
 

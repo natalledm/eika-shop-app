@@ -19,6 +19,31 @@ a {
   color: inherit;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+}
+
+.main-button {
+  width: 200px;
+  line-height: 44px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: var(--soft-blue);
+}
+
+.main-button:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
 /* General layout organization */
 
 .flex-column-center {
@@ -41,5 +66,10 @@ a {
   a,
   label {
     font-size: 1.8rem;
+  }
+
+  .logo {
+    width: 360px;
+    height: 144px;
   }
 }

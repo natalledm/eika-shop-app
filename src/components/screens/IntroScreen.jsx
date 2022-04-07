@@ -9,7 +9,7 @@ export default function IntroScreen({ setIsModalOpen }) {
         <img
           src={logo}
           alt="Logo from Eika made of the letters"
-          className="intro-logo"
+          className="logo"
         />
       </div>
       <section>
@@ -28,10 +28,7 @@ export default function IntroScreen({ setIsModalOpen }) {
           you the name and the price of the item you want to purchase. You can
           also add an image after the item is added by touching the image icon.
         </p>
-        <button
-          className="intro-link-button"
-          onClick={() => setIsModalOpen(true)}
-        >
+        <button className="main-button" onClick={() => setIsModalOpen(true)}>
           Add item
         </button>
       </section>
