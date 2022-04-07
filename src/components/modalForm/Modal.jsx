@@ -6,7 +6,9 @@ import CreateItemForm from "./CreateItemForm";
 export default function Modal({ isModalOpen, setIsModalOpen, createItem }) {
   if (isModalOpen === false) return;
 
-  return createPortal(
+  console.log(JSON.stringify(CreateItemForm));
+
+  const modal = createPortal(
     <div role="dialog" className="modal-container">
       <div
         className="background-fade"
@@ -21,4 +23,6 @@ export default function Modal({ isModalOpen, setIsModalOpen, createItem }) {
     </div>,
     document.getElementById("modal"),
   );
+
+  return <div>{modal}</div>;
 }
