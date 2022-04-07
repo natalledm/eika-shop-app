@@ -2,7 +2,7 @@ import ShoppingList from "../lists/ShoppingList";
 import logo from "../../assets/logo/logo-desktop.png";
 import "../../styles/screens/shopping-screen.css";
 import eyeClosed from "../../assets/icons/icon-eye-close.png";
-import eyeOpen from "../../assets/icons/icon-eye-open.png";
+// import eyeOpen from "../../assets/icons/icon-eye-open.png";
 
 export default function ShoppingScreen({ list, setIsModalOpen }) {
   console.log(list);
@@ -18,7 +18,7 @@ export default function ShoppingScreen({ list, setIsModalOpen }) {
         <img src={logo} alt="Eika's logo" className="logo" />
         <h1 className="shop-title">Shopping List</h1>
       </header>
-      <div className="incomplete-list-container">
+      <div className="list-container">
         <ShoppingList list={filterIncompleteItems(list)} />
       </div>
       <button className="main-button" onClick={() => setIsModalOpen(true)}>
