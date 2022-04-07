@@ -20,7 +20,6 @@ export default function CreateItemForm({ setIsModalOpen, createItem }) {
     };
 
     createItem(newItem);
-    console.log(newItem);
     setIsModalOpen(false);
   }
 

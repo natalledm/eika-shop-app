@@ -4,21 +4,20 @@ import { useEffect, useState } from "react";
 import Modal from "./components/modalForm/Modal";
 import ShoppingScreen from "./components/screens/ShoppingScreen";
 
+import getLocalStorage from "./scripts/getLocalStorage";
+
 export default function App() {
   // Property
   const storageKey = "shop-list";
 
-  // get local storage
-  const initialListString = localStorage.getItem(storageKey);
-  const initialList = JSON.parse(initialListString) || [];
-
   // state
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [list, setList] = useState(initialList);
+  const [list, setList] = useState(getLocalStorage(storageKey));
 
-  const createItem = (newItem) => {
+  // set item
+  function createItem(newItem) {
     setList([...list, newItem]);
-  };
+  }
 
   // Save local storage
   useEffect(
