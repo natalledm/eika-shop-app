@@ -5,14 +5,8 @@ const modalRoot = document.createElement("div");
 modalRoot.setAttribute("id", "modal");
 document.body.appendChild(modalRoot);
 
-jest.mock("./CreateItemForm", () => {
-  return {
-    __esmodule: true,
-    A: true,
-    default: () => {
-      return <div role="dialog">Create new item</div>;
-    },
-  };
+jest.mock("./CreateItemForm", () => () => {
+  return <div role="dialog">Create new item</div>;
 });
 
 it("renders the Modal if it receives the property true", () => {

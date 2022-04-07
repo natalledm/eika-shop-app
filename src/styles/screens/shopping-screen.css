@@ -1,0 +1,42 @@
+.shopping-screen-container {
+  max-width: 1080px;
+  height: fit-content;
+  align-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.shop-header {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.shop-title {
+  padding-top: 2rem;
+}
+
+.list-container {
+  width: 80%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completed-item-button {
+  border: none;
+  background-color: var(--soft-blue);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+  margin-top: 3rem;
+  height: 50px;
+  cursor: pointer;
+}
+
+.completed-item-button:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}

@@ -3,22 +3,18 @@ import { createPortal } from "react-dom";
 
 import CreateItemForm from "./CreateItemForm";
 
-export default function Modal({ isModalOpen, setIsModalOpen, createItem }) {
+export default function Modal({ isModalOpen, toggleModal, createItem }) {
   if (isModalOpen === false) return;
 
-  return createPortal(
+  const modal = createPortal(
     <div role="dialog" className="modal-container">
-      <div
-        className="background-fade"
-        onClick={() => setIsModalOpen(false)}
-      ></div>
+      <div className="background-fade" onClick={toggleModal}></div>
       <div className="modal-content">
-        <CreateItemForm
-          setIsModalOpen={setIsModalOpen}
-          createItem={createItem}
-        />
+        <CreateItemForm toggleModal={toggleModal} createItem={createItem} />
       </div>
     </div>,
     document.getElementById("modal"),
   );
+
+  return <div>{modal}</div>;
 }

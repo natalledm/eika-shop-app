@@ -1,12 +1,12 @@
 import "../../styles/components/create-item-form.css";
 import close from "../../assets/icons/icon-close.png";
-import { useState, useId } from "react";
+import { useState } from "react";
 
-export default function CreateItemForm({ setIsModalOpen, createItem }) {
+export default function CreateItemForm({ toggleModal, createItem }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
-  const id = useId();
+  const id = Date.now();
 
   function submitItem(event) {
     event.preventDefault();
@@ -20,17 +20,13 @@ export default function CreateItemForm({ setIsModalOpen, createItem }) {
     };
 
     createItem(newItem);
-    console.log(newItem);
-    setIsModalOpen(false);
+    toggleModal();
   }
 
   return (
     <div className="form-container">
       <header className="form-header">
-        <button
-          className="form-close-button"
-          onClick={() => setIsModalOpen(false)}
-        >
+        <button className="form-close-button" onClick={toggleModal}>
           <img src={close} alt="close button" />
         </button>
         <h2 className="form-title">Create new item</h2>
@@ -62,7 +58,7 @@ export default function CreateItemForm({ setIsModalOpen, createItem }) {
         </label>
         <button className="form-submit">Create item</button>
       </form>
-      <button className="form-cancel" onClick={() => setIsModalOpen(false)}>
+      <button className="form-cancel" onClick={toggleModal}>
         Cancel
       </button>
     </div>

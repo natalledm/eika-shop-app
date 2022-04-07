@@ -1,0 +1,31 @@
+.shop-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  justify-content: space-between;
+  gap: 7rem;
+  width: inherit;
+}
+
+.check-name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price-img {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
