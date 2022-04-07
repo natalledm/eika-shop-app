@@ -6,7 +6,7 @@ export default function CreateItemForm({ setIsModalOpen, createItem }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
-  const id = useId();
+  const id = Date.now();
 
   function submitItem(event) {
     event.preventDefault();
