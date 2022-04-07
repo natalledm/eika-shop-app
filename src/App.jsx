@@ -25,6 +25,14 @@ export default function App() {
     [list],
   );
 
+  const toggleModal = () => {
+    if (isModalOpen) {
+      setIsModalOpen(false);
+    } else {
+      setIsModalOpen(true);
+    }
+  };
+
   return (
     <div className="App">
       {list.length === 0 && <IntroScreen setIsModalOpen={setIsModalOpen} />}
@@ -33,7 +41,7 @@ export default function App() {
       )}
       <Modal
         isModalOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
+        toggleModal={toggleModal}
         createItem={createItem}
       />
     </div>
