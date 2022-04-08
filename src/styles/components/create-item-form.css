@@ -48,6 +48,10 @@
   padding-left: 1rem;
 }
 
+.form-label small {
+  color: var(--accent-red);
+}
+
 .form-submit {
   margin-top: 1rem;
   width: 200px;

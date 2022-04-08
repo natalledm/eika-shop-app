@@ -1,15 +1,29 @@
 import "../styles/components/create-item-form.css";
 import close from "../assets/icons/icon-close.png";
 import { useState } from "react";
+import validateName from "../scripts/validateName";
 
 export default function CreateItemForm({ toggleModal, createItem }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
   const id = Date.now();
 
   function submitItem(event) {
     event.preventDefault();
+    setError(false);
+    setErrorMessage("");
+
+    const validName = validateName(name);
+
+    if (validName.error === true) {
+      setError(true);
+      setErrorMessage("The product name must not be empty");
+      return;
+    }
 
     const newItem = {
       id: id,
@@ -42,7 +56,7 @@ export default function CreateItemForm({ toggleModal, createItem }) {
             placeholder="Chair"
             required={true}
           />
-          {/* <small>The product name must not be empty</small> */}
+          {error ? <small>{errorMessage}</small> : null}
         </label>
         <label className="form-label">
           Product price
