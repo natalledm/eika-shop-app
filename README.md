@@ -6,7 +6,7 @@ This is the Eika's shopping list, an app that helps you save the items you want 
 
 It is a **mobile first page**, so please check it out first with your mobile or a mobile screen option in your browser.
 
-You can visit the page [here](https://google.com/) to see the working app.
+You can visit the page [here](https://eika-shop-app.web.app/) to see the working app.
 
 ## Project Steps
 
