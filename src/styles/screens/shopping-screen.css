@@ -15,6 +15,23 @@
   padding-top: 2rem;
 }
 
+.shop-sort {
+  padding-right: 1rem;
+}
+
+.shop-sort-btn {
+  border: none;
+  background-color: var(--soft-blue);
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.shop-sort-btn:hover {
+  text-decoration: underline;
+}
+
 .list-container {
   width: 80%;
   margin: 2rem 0;

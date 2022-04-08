@@ -33,6 +33,36 @@ export default function App() {
     setList(newList);
   };
 
+  const onSortByName = () => {
+    const newList = [...list];
+    if (newList.length === 0) return;
+    const sortedByName = newList.sort((a, b) => {
+      let nameItemA = a.name.toUpperCase();
+      let nameItemB = b.name.toUpperCase();
+      if (nameItemA < nameItemB) {
+        return -1;
+      } else if (nameItemA > nameItemB) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+
+    setList(sortedByName);
+  };
+
+  const onSortByPrice = () => {
+    const newList = [...list];
+    if (newList.length === 0) return;
+    const sortedByPrice = newList.sort((a, b) => {
+      let priceItemA = Number(a.price);
+      let priceItemB = Number(b.price);
+      return priceItemA - priceItemB;
+    });
+
+    setList(sortedByPrice);
+  };
+
   // Save local storage
   useEffect(
     () => localStorage.setItem(storageKey, JSON.stringify(list)),
@@ -55,6 +85,8 @@ export default function App() {
           list={list}
           toggleModal={toggleModal}
           onItemCheck={onItemCheck}
+          onSortByName={onSortByName}
+          onSortByPrice={onSortByPrice}
         />
       )}
       <Modal

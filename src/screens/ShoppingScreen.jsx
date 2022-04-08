@@ -6,7 +6,13 @@ import eyeClosed from "../assets/icons/icon-eye-close.png";
 import eyeOpen from "../assets/icons/icon-eye-open.png";
 import "../styles/screens/shopping-screen.css";
 
-export default function ShoppingScreen({ list, onItemCheck, toggleModal }) {
+export default function ShoppingScreen({
+  list,
+  onItemCheck,
+  toggleModal,
+  onSortByName,
+  onSortByPrice,
+}) {
   const [isCompletedOpen, setIsCompletedOpen] = useState(false);
   const toggleCompletedList = () => setIsCompletedOpen(!isCompletedOpen);
 
@@ -22,6 +28,15 @@ export default function ShoppingScreen({ list, onItemCheck, toggleModal }) {
         <img src={logo} alt="Eika's logo" className="logo" />
         <h1 className="shop-title">Shopping List</h1>
       </header>
+      <div>
+        <span className="shop-sort">Sort by:</span>
+        <button className="shop-sort-btn" onClick={onSortByName}>
+          Name
+        </button>
+        <button className="shop-sort-btn" onClick={onSortByPrice}>
+          Price
+        </button>
+      </div>
       <div className="list-container">
         {incompleteItems.length === 0 ? (
           <p>No items to show</p>
