@@ -1,5 +1,5 @@
-import "../../styles/components/create-item-form.css";
-import close from "../../assets/icons/icon-close.png";
+import "../styles/components/create-item-form.css";
+import close from "../assets/icons/icon-close.png";
 import { useState } from "react";
 
 export default function CreateItemForm({ toggleModal, createItem }) {

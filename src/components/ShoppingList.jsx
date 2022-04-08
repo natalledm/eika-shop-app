@@ -1,6 +1,6 @@
-import imageIcon from "../../assets/icons/image-icon.png";
-import checkImgUrl from "../../scripts/checkImgUrl";
-import "../../styles/components/shopping-list.css";
+import imageIcon from "../assets/icons/image-icon.png";
+import checkImgUrl from "../scripts/checkImgUrl";
+import "../styles/components/shopping-list.css";
 
 export default function ShoppingList({ list, onItemCheck }) {
   if (list.length === 0) return;

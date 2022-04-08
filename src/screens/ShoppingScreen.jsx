@@ -1,9 +1,9 @@
 import { useState } from "react";
-import ShoppingList from "../lists/ShoppingList";
+import ShoppingList from "../components/ShoppingList";
 
-import logo from "../../assets/logo/logo-desktop.png";
-import eyeClosed from "../../assets/icons/icon-eye-close.png";
-import "../../styles/screens/shopping-screen.css";
+import logo from "../assets/logo/logo-desktop.png";
+import eyeClosed from "../assets/icons/icon-eye-close.png";
+import "../styles/screens/shopping-screen.css";
 // import eyeOpen from "../../assets/icons/icon-eye-open.png";
 
 export default function ShoppingScreen({ list, onItemCheck, toggleModal }) {

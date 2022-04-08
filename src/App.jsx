@@ -1,8 +1,8 @@
 import "./styles/App.css";
-import IntroScreen from "./components/screens/IntroScreen";
+import IntroScreen from "./screens/IntroScreen";
 import { useEffect, useState } from "react";
-import Modal from "./components/modalForm/Modal";
-import ShoppingScreen from "./components/screens/ShoppingScreen";
+import Modal from "./components/Modal";
+import ShoppingScreen from "./screens/ShoppingScreen";
 
 import getLocalStorage from "./scripts/getLocalStorage";
 
@@ -19,6 +19,7 @@ export default function App() {
     setList([...list, newItem]);
   }
 
+  // change item isCompleted, create new list and save to state
   const onItemCheck = (itemId) => {
     const newList = list.map((item) => {
       if (item.id === itemId) {

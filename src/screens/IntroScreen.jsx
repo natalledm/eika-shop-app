@@ -1,6 +1,6 @@
-import image from "../../assets/images/woman-shopping.png";
-import logo from "../../assets/logo/logo-desktop.png";
-import "../../styles/screens/intro-screen.css";
+import image from "../assets/images/woman-shopping.png";
+import logo from "../assets/logo/logo-desktop.png";
+import "../styles/screens/intro-screen.css";
 
 export default function IntroScreen({ toggleModal }) {
   return (

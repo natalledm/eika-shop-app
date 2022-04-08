@@ -1,4 +1,4 @@
-import "../../styles/components/modal.css";
+import "../styles/components/modal.css";
 import { createPortal } from "react-dom";
 
 import CreateItemForm from "./CreateItemForm";
