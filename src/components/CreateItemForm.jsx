@@ -76,6 +76,7 @@ export default function CreateItemForm({ toggleModal, createItem }) {
             onChange={(event) => setPrice(event.target.value)}
             placeholder="100"
             required={true}
+            min="1"
           />
         </label>
         <button className="form-submit">Create item</button>
