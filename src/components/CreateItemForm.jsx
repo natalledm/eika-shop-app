@@ -2,6 +2,7 @@ import "../styles/components/create-item-form.css";
 import close from "../assets/icons/icon-close.png";
 import { useState } from "react";
 import validateName from "../scripts/validateName";
+import validatePrice from "../scripts/validatePrice";
 
 export default function CreateItemForm({ toggleModal, createItem }) {
   const [name, setName] = useState("");
@@ -22,6 +23,14 @@ export default function CreateItemForm({ toggleModal, createItem }) {
     if (validName.error === true) {
       setError(true);
       setErrorMessage("The product name must not be empty");
+      return;
+    }
+
+    const validPrice = validatePrice(price);
+
+    if (validPrice.error === true) {
+      setError(true);
+      setErrorMessage("The price must be more than zero");
       return;
     }
 
@@ -47,6 +56,7 @@ export default function CreateItemForm({ toggleModal, createItem }) {
       </header>
       <form onSubmit={(event) => submitItem(event)}>
         <label className="form-label">
+          {error ? <small>{errorMessage}</small> : null}
           Product name
           <input
             type="text"
@@ -56,7 +66,6 @@ export default function CreateItemForm({ toggleModal, createItem }) {
             placeholder="Chair"
             required={true}
           />
-          {error ? <small>{errorMessage}</small> : null}
         </label>
         <label className="form-label">
           Product price
@@ -68,7 +77,6 @@ export default function CreateItemForm({ toggleModal, createItem }) {
             placeholder="100"
             required={true}
           />
-          {/* <small>The price must cost more than 0</small> */}
         </label>
         <button className="form-submit">Create item</button>
       </form>
