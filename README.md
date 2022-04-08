@@ -24,7 +24,7 @@ This is [the component tree](https://whimsical.com/eika-redo-components-2GA3VMfX
 
 ### User Flow
 
-This is [the user flow](https://whimsical.com/instapaket-packet-tracker-Ujgpt4hkSxVL6LShLSdLwp@2Ux7TurymMpdwV9dTytZ) of this project made on Whimsical.
+This is [the user flow](https://whimsical.com/eika-redo-components-2GA3VMfX6P3s7h11Gmz6Tc@2Ux7TurymP4T3jEjjZr6) of this project made on Whimsical.
 
 ### Figma design
 
